@@ -1,0 +1,12 @@
+span {
+  color: var(--ion-color-success);
+  font-weight: bold;
+}
+
+ion-textarea {
+  max-height: 200px;
+  overflow: auto;
+  border-radius: 12px;
+  border: 2px #000 solid;
+}
+

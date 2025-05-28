@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> App Attest </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">App Attest</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h1>1º - Generate Key (SecureEncalve)</h1>
+  <ion-button expand="block" color="primary" (click)="step1()" [disabled]="!!keyId"> Generate Key </ion-button>
+  <p>Key ID: <span>{{ keyId }}</span></p>
+
+  <h1>2º - Request Challenge (from backend)</h1>
+  <ion-button expand="block" color="primary" (click)="step2()" [disabled]="challenge || busyChallenge || !keyId">
+    Request Challenge
+  </ion-button>
+  <p>Challenge: <span>{{ challenge }}</span></p>
+
+  <h1>3º - Request Attestation (from Apple)</h1>
+  <ion-button
+    expand="block"
+    color="primary"
+    (click)="step3()"
+    [disabled]="attestation || busyAttestation || !challenge"
+  >
+    Request Attestation
+  </ion-button>
+  <ion-textarea readonly>{{ attestation | json }}</ion-textarea>
+
+  <h1>4º - Verify Attestation (with backend)</h1>
+  <ion-button expand="block" color="primary" (click)="step4()" [disabled]="verified || busyVerify || !attestation">
+    Verify Attestation
+  </ion-button>
+  @if(verified){
+  <p><span>Verified ✅</span></p>
+  }
+
+  <h1>5º - Send data with Assertion (to backend)</h1>
+  <ion-textarea #dataToBeAsserted [disabled]="!verified || busyAssertion"></ion-textarea>
+  <ion-button
+    expand="block"
+    color="primary"
+    (click)="step5(dataToBeAsserted)"
+    [disabled]="busyAssertion || !verified || !dataToBeAsserted.value"
+  >
+    Send with Assertion
+  </ion-button>
+</ion-content>

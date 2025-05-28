@@ -1,0 +1,7 @@
+{
+  "name": "capacitor-app-attest-example",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
