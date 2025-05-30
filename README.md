@@ -7,7 +7,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/maintenance/yes/2025?style=flat-square" />
-  <a href="https://github.com/ludufre/capacitor-app-attest/actions?query=workflow%3A%22CI%22"><img src="https://img.shields.io/github/workflow/status/ludufre/capacitor-app-attest/CI?style=flat-square" /></a>
+  <a href="https://github.com/ludufre/capacitor-app-attest/actions?query=workflow%3A%22CI%22"><img src="https://img.shields.io/github/actions/workflow/status/ludufre/capacitor-app-attest/test.yml" /></a>
   <a href="https://www.npmjs.com/package/capacitor-app-attest"><img src="https://img.shields.io/npm/l/capacitor-app-attest?style=flat-square" /></a>
 <br>
   <a href="https://www.npmjs.com/package/capacitor-app-attest"><img src="https://img.shields.io/npm/dw/capacitor-app-attest?style=flat-square" /></a>
