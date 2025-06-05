@@ -12,6 +12,8 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 <a href="#contributors-"><img src="https://img.shields.io/badge/all%20contributors-0-orange?style=flat-square" /></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+<br />
+<a href="https://www.buymeacoffee.com/ludufre"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-ludufre-fce802?style=flat-square" alt="Buy me a coffee"></a>
 </p>
 
 ## Maintainers
@@ -50,6 +52,8 @@ npx cap sync
 This plugin is based on the [App Attest](https://developer.apple.com/documentation/devicecheck/establishing-your-app-s-integrity) feature from Apple, which provides a way to attest the integrity of your app and its interactions with your backend. WWDC 2021 session [10244](https://developer.apple.com/videos/play/wwdc2021/10244/) provides a good overview of how to use it.
 
 Backend validation example in `./example-backend` is based on the [node-app-attest-example](https://github.com/uebelack/node-app-attest-example) ([@uebelack](https://github.com/uebelack)).
+
+<a href="https://www.buymeacoffee.com/ludufre"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png"></a>
 
 ## API
 
